@@ -11,8 +11,8 @@ This project was created by running the command
 |-------------|---------|
 | Bun         | 1       |
 | React       | 18      |
-| Typescript  | 6       |
-| Vite        | 4       |
+| Typescript  | 5       |
+| Vite        | 5       |
 
 ## How to Run
 
