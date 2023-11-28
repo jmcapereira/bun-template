@@ -1,18 +1,22 @@
 import BurgerMenu from './components/BurgerMenu';
 import './App.css';
-import MainPage from './components/MainPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
-    <div className="App" id="outer-container">
-      <BurgerMenu />
-      <div id="page-wrap">
-        <header className="App-header">
-          <h1>Welcome to My App</h1>
-        </header>
-        <MainPage />
+    <Router>
+      <div className="App">
+        <BurgerMenu />
       </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,18 +1,19 @@
 import { slide as Menu } from 'react-burger-menu';
 import './BurgerMenu.css';
+import { Link } from 'react-router-dom';
 
 const BurgerMenu = () => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
-      <a className="menu-item" href="/about">
+      </Link>
+      <Link className="menu-item" to="/about">
         About
-      </a>
-      <a className="menu-item" href="/contact">
+      </Link>
+      <Link className="menu-item" to="/contact">
         Contact
-      </a>
+      </Link>
     </Menu>
   );
 };
